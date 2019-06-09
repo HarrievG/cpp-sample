@@ -27,7 +27,7 @@ steps:
 #    configuration: '$(buildConfiguration)'
 - task: CMake@1
   inputs:
-    cmakeArgs: 
+    cmakeArgs: ..
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
