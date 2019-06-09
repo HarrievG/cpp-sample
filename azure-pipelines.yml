@@ -13,9 +13,8 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'x64'
   buildConfiguration: 'Release'
-
 #steps:
-#- task: NuGetToolInstaller@0
+- task: NuGetToolInstaller@0
 
 #- task: NuGetCommand@2
 #  inputs:
@@ -26,7 +25,6 @@ variables:
 #    solution: '$(solution)'
 #    platform: '$(buildPlatform)'
 #    configuration: '$(buildConfiguration)'
-
 - task: CMake@1
   inputs:
     cmakeArgs: 
